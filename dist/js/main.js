@@ -1,0 +1,1 @@
+$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip(),$('[data-toggle="tab"]').on("click",function(){$(this).tab("show")}),$("#restore-pass").on("click",function(t){t.preventDefault(),$(".enter-block-tabs").addClass("hidden")}),$("#back-to-form").on("click",function(t){t.preventDefault(),$(".enter-block-tabs").removeClass("hidden")})});

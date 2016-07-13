@@ -1,0 +1,84 @@
+.enter-block {
+	max-width: 360px;
+	margin: 20px auto 175px;
+	border: 1px solid $gray-d;
+	border-radius: 5px;
+	box-shadow: 0 5px 17px -2px rgba(0,0,0,.5);
+
+	&-header {
+		border-bottom: 1px solid $gray-d;
+	}
+
+	&-logo {
+		font-size: $font-size-h1;
+		text-align: center;
+		color: $gray-1;
+		margin: 43px 0 38px 0;
+	}
+
+	&-tabs {
+		list-style: none;
+		text-align: center;
+		padding: 0;
+		margin-bottom: -1px;
+		margin-top: -10px;
+
+		li {
+			display: inline-block;
+			padding: 0 12px 7px;
+			border-bottom: 3px solid transparent;
+
+			&.active {
+				border-bottom: 3px solid $brand-primary;
+				font-weight: bold;
+			}
+		}
+
+		a {
+			color: $gray-3;
+		}
+	}
+
+	.link {
+		display: block;
+		text-align: center;
+		font-size: 12px;
+		margin-top: 16px;
+	}
+
+	&-text {
+		font-size: 13px;
+		line-height: 1.35;
+		text-align: center;
+		margin-top: 16px;
+		padding: 0 20px;
+
+		.link {
+			display: inline;
+			font-size: inherit;
+		}
+
+		&.no-padding {
+			padding: 0;
+			margin-top: 12px;
+			margin-bottom: 17px;
+		}
+	}
+
+	&-title {
+		text-align: center;
+		font-size: 20px;
+		margin: 6px 0 0px;
+	}
+
+	.tab-content {
+		padding: 18px 20px 14px;
+	}
+
+	.btn {
+		display: block;
+		width: 100%;
+		margin: 20px 0 0;
+		padding: 9px 0;
+	}
+}

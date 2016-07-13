@@ -1,0 +1,13 @@
+.link {
+	color: $gray-1;
+
+	&-back {
+
+		&:before {
+			content: url("../img/arrow.png");
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 2px;
+		}
+	}
+}

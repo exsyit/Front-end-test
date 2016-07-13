@@ -1,0 +1,111 @@
+<!doctype html >
+<html lang="ru">
+<head>
+    <title>Index</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <!-- build: cssPlugins -->
+    <!-- end build -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!-- content -->
+	<div id="wrapper">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-24">
+
+					<div class="enter-block">
+
+						<div class="enter-block-header">
+						    <h1 class="enter-block-logo">Logo</h1>
+						    <ul class="enter-block-tabs">
+						        <li class="active">
+						            <a href="#entering" data-toggle="tab">Вход в панель</a>
+						        </li>
+						        <li>
+						            <a href="#registration" data-toggle="tab">Регистрация</a>
+						        </li>
+						    </ul>
+						</div>
+
+						<div class="tab-content">
+
+							<div id="entering" class="tab-pane active">
+							    <form action="">
+							        <label class="input-wrapper">
+							            <input type="text" placeholder="Логин или Email" class="input">
+							        </label>
+							        <label class="input-wrapper">
+							            <input type="password" placeholder="Пароль" class="input">
+							        </label>
+							        <button type="submit" class="btn btn-primary">Войти</button>
+							    </form>
+							    <a href="#restore" id="restore-pass" class="link" data-toggle="tab">Забыли пароль?</a>
+							</div>
+
+							<div id="registration" class="tab-pane">
+							    <form action="">
+							        <label class="input-wrapper">
+							            <input type="email" placeholder="Email" class="input">
+							        </label>
+							        <label class="input-wrapper">
+							            <input type="password" placeholder="Пароль" class="input">
+							        </label>
+							        <label class="input-wrapper">
+							            <input type="password" placeholder="Повторите пароль" class="input">
+							        </label>
+							        <button type="submit" class="btn btn-primary">Зарегестрироваться</button>
+							    </form>
+							    <div class="enter-block-text">
+							        Регистрируясь, вы соглашаетесь с нашими <a href="#" class="link">условиями использования</a> и <a
+							            href="#" class="link">политикой конфиденциальности</a>
+							    </div>
+							</div>
+
+							<div id="restore" class="tab-pane">
+							    <h2 class="enter-block-title">Забыли пароль?</h2>
+							    <div class="enter-block-text no-padding">
+							        Не переживайте. Просто введите свою эл.почту или логин и мы вышлем инструкцию по восстановлению
+							    </div>
+							    <form action="">
+							        <label class="input-wrapper">
+							            <input type="email" placeholder="Логин или Email" class="input">
+							        </label>
+							        <button type="submit" class="btn btn-primary">Восстановить пароль</button>
+							    </form>
+							    <a href="#entering" id="back-to-form" data-toggle="tab" class="link link-back">Назад к форме входа</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /content -->
+	<!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-24">
+                    <h2 class="footer-title">Footer</h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
