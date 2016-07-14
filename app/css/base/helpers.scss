@@ -78,10 +78,42 @@ $spaceamounts: (0, 5, 10, 15, 20, 25, 30);
 	}
 }
 
+@mixin generate-margin-left() {
+	@each $space in $spaceamounts {
+		.m-l-#{$space} {
+			margin-left: #{$space}px !important;
+		}
+	}
+}
+
+@mixin generate-margin-right() {
+	@each $space in $spaceamounts {
+		.m-r-#{$space} {
+			margin-right: #{$space}px !important;
+		}
+	}
+}
+
 @mixin generate-padding-top() {
 	@each $space in $spaceamounts {
 		.p-t-#{$space} {
 			padding-top: #{$space}px !important;
+		}
+	}
+}
+
+@mixin generate-padding-left() {
+	@each $space in $spaceamounts {
+		.p-l-#{$space} {
+			padding-left: #{$space}px !important;
+		}
+	}
+}
+
+@mixin generate-padding-right() {
+	@each $space in $spaceamounts {
+		.p-r-#{$space} {
+			padding-right: #{$space}px !important;
 		}
 	}
 }
@@ -95,8 +127,13 @@ $spaceamounts: (0, 5, 10, 15, 20, 25, 30);
 }
 
 @include generate-margin-top();
+@include generate-margin-left();
+@include generate-margin-right()
 @include generate-margin-bottom();
+
 @include generate-padding-top();
+@include generate-padding-left();
+@include generate-padding-right();
 @include generate-padding-bottom();
 
 // Full Size
