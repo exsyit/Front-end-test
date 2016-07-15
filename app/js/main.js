@@ -13,11 +13,11 @@ $(document).ready(function() {
     // Hide and show menu
     $('#restore-pass').on('click', function (e) {
         e.preventDefault();
-        $('.enter-block-tabs').addClass('hidden');
+        $('#tab-block').addClass('hidden');
     });
 
     $('#back-to-form').on('click', function (e) {
         e.preventDefault();
-        $('.enter-block-tabs').removeClass('hidden');
+        $('#tab-block').removeClass('hidden');
     });
 });

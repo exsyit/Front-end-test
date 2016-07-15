@@ -54,6 +54,18 @@
 
 	// Color Variations
 	// -------------------------------
+	&-default {
+		background: $gray-f5;
+		@include box-shadow( 0 2px 2px rgba(0,0,0,.075));
 
+		> .panel-heading {
+			background: inherit;
+		}
+
+		> .panel-body {
+			background: inherit;
+
+		}
+	}
 
 }

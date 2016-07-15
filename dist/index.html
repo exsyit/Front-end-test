@@ -20,13 +20,13 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-24">
+				<div class="col-lg-offset-8 col-lg-8 col-md-10 col-md-offset-7 col-sm-offset-6 col-sm-12 col-xs-offset-0 col-xs-24">
 
-					<div class="enter-block">
+					<div class="panel panel-default m-t-20">
 
-						<div class="enter-block-header">
-						    <h1 class="enter-block-logo">Logo</h1>
-						    <ul class="enter-block-tabs">
+						<div class="panel-heading p-b-0">
+						    <h1 class="p-t-20 p-b-40 m-t-0 m-b-0 ta-center">Logo</h1>
+						    <ul id="tab-block" class="nav-primary ta-center media-list">
 						        <li class="active">
 						            <a href="#entering" data-toggle="tab">Вход в панель</a>
 						        </li>
@@ -36,52 +36,41 @@
 						    </ul>
 						</div>
 
-						<div class="tab-content p-l-20 p-r-20 p-t-20 p-b-20">
+						<div class="panel-body tab-content tab-primary">
 
 							<div id="entering" class="tab-pane active">
 							    <form action="">
-							        <div class="">
-							            <input type="text" placeholder="Логин или Email" class="form-control input-lg">
-							        </div>
-							        <div class="">
-							            <input type="password" placeholder="Пароль" class="form-control input-lg">
-							        </div>
+							        <input type="text" placeholder="Логин или Email" class="form-control input-lg">
+							        <input type="password" placeholder="Пароль" class="form-control input-lg">
 							        <button type="submit" class="btn btn-primary btn-block btn-lg m-t-20">Войти</button>
 							    </form>
-							    <a href="#restore" id="restore-pass" class="btn btn-link btn-block m-t-15" data-toggle="tab">Забыли пароль?</a>
+							    <a href="#restore" id="restore-pass" class="btn btn-link btn-block m-t-15 fz-xs" data-toggle="tab">Забыли
+							        пароль?</a>
 							</div>
 
 							<div id="registration" class="tab-pane">
 							    <form action="">
-							        <div class="input-wrapper">
-							            <input type="email" placeholder="Email" class="form-control input-lg">
-							        </div>
-							        <div class="input-wrapper">
-							            <input type="password" placeholder="Пароль" class="form-control input-lg">
-							        </div>
-							        <divbel class="input-wrapper">
-							            <input type="password" placeholder="Повторите пароль" class="form-control input-lg">
-							        </divbel>
+							        <input type="email" placeholder="Email" class="form-control input-lg">
+							        <input type="password" placeholder="Пароль" class="form-control input-lg">
+							        <input type="password" placeholder="Повторите пароль" class="form-control input-lg">
 							        <button type="submit" class="btn btn-primary btn-block btn-lg m-t-20">Зарегестрироваться</button>
 							    </form>
-							    <div class="enter-block-text">
-							        Регистрируясь, вы соглашаетесь с нашими <a href="#" class="link">условиями использования</a> и <a
-							            href="#" class="link">политикой конфиденциальности</a>
+							    <div class="ta-center form-control-static text-muted fz-xs">
+							        Регистрируясь, вы соглашаетесь с нашими <a href="#" class="link">условиями использования</a> и
+							        <a href="#" class="link">политикой конфиденциальности</a>
 							    </div>
 							</div>
 
 							<div id="restore" class="tab-pane">
-							    <h2 class="enter-block-title">Забыли пароль?</h2>
-							    <div class="enter-block-text no-padding">
+							    <h3 class="ta-center m-t-0 m-b-15">Забыли пароль?</h3>
+							    <div class="no-padding ta-center text-muted m-b-15 fz-small">
 							        Не переживайте. Просто введите свою эл.почту или логин и мы вышлем инструкцию по восстановлению
 							    </div>
 							    <form action="">
-							        <div class="">
-							            <input type="email" placeholder="Логин или Email" class="form-control input-lg">
-							        </div>
+							        <input type="email" placeholder="Логин или Email" class="form-control input-lg">
 							        <button type="submit" class="btn btn-primary btn-block btn-lg m-t-20">Восстановить пароль</button>
 							    </form>
-							    <a href="#entering" id="back-to-form" data-toggle="tab" class="btn btn-link btn-block m-t-15">Назад к форме входа</a>
+							    <a href="#entering" id="back-to-form" data-toggle="tab" class="btn btn-link btn-block m-t-15 fz-xs">Назад к форме входа</a>
 							</div>
 						</div>
 					</div>
@@ -97,7 +86,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-24">
-                    <h2 class="footer-title">Footer</h2>
+                    <h2 class="ta-center fz-large">Footer</h2>
                 </div>
             </div>
         </div>

@@ -60,7 +60,7 @@
 // Generic Margin Padding Options
 // -------------------------------
 
-$spaceamounts: (0, 5, 10, 15, 20, 25, 30);
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40);
 
 @mixin generate-margin-top() {
 	@each $space in $spaceamounts {
@@ -159,4 +159,57 @@ $spaceamounts: (0, 5, 10, 15, 20, 25, 30);
 
 .bdrs-0{
 	border-radius: 0;
+}
+
+// Align text
+
+$text-align: (left, center, right, justify);
+@mixin align-text() {
+	@each $align in $text-align {
+		.ta-#{$align} {
+			text-align: #{$align} !important;
+		}
+	}
+}
+
+@include align-text();
+
+// Font-size
+
+.fz-base {
+	font-size: $font-size-base !important;
+}
+
+.fz-large {
+	font-size: $font-size-large !important;
+}
+
+.fz-small {
+	font-size: $font-size-small !important;
+}
+
+.fz-xs {
+	font-size: $font-size-xs !important;
+}
+
+// Tabs
+
+.nav-primary {
+	text-align: center;
+	margin-bottom: -1px;
+
+	li {
+		display: inline-block;
+		padding-left: $padding-base-vertical;
+		padding-right: $padding-base-vertical;
+		padding-bottom: $padding-base-horizontal;
+
+		&.active {
+			border-bottom: 3px solid $brand-primary;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
 }
